@@ -1,3 +1,9 @@
+
+#ISANGA NADIA HANIFA -16/U/4965/PS
+#SAMULA MICHAEL-16/U/1089
+#WOLIMBWA NORMAN GADENYA-16/U/12408/PS
+#MUGAGGA MICHAEL-16/U/7210/PS
+
 import pygame
 from pygame.locals import *
 import math
@@ -7,8 +13,8 @@ import random
 print("--------------")
 print("| welcome |")
 print("--------------")
-name=raw_input("What is your name?---")
-print("We have four modes namely : easy , hard and terrible")
+name=raw_input("What is your name?---") 
+print("We have four modes namely : easy , hard and terrible")#shows the game different game modes
 ans=raw_input("%s Which mode would you like to play?--- "%name.upper())
 mode=ans
 str(mode)

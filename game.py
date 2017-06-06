@@ -17,7 +17,7 @@ name=raw_input("What is your name?---")
 print("We have four modes namely : easy , hard and terrible")#shows the game different game modes
 ans=raw_input("%s Which mode would you like to play?--- "%name.upper())
 mode=ans
-str(mode)
+str(mode)#converts mode to a string
 
 def game(a):
     str(a)
@@ -29,7 +29,7 @@ def game(a):
 
     acc=[0, 0]
     arrows=[]
-    if a=="terrible":
+    if a=="terrible":# depending on the chosen mode, it changes the badtimer thus adjusting the difficulity of the game
             badtimer =3
             
     elif a=="hard":
@@ -237,7 +237,7 @@ def game(a):
     if exitcode==0:
         pygame.font.init()
         font = pygame.font.Font(None, 24)
-        text = font.render("%s YOUR ACCURACY IS  "%name.upper() +str(accuracy)+"%", True, (25, 10, 5))
+        text = font.render("%s YOUR ACCURACY IS  "%name.upper() +str(accuracy)+"%", True, (25, 10, 5))#%name.upper() just changes the string stored in name to uppercase
         textRect = text.get_rect()
         textRect.centerx=screen.get_rect().centerx
         textRect.centery=screen.get_rect().centery+24
@@ -262,4 +262,4 @@ def game(a):
         pygame.display.flip()
 
     return a
-game(mode)
+game(mode)#starts the game() function

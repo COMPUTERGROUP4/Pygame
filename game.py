@@ -14,7 +14,7 @@ print("--------------")
 print("| welcome |")
 print("--------------")
 name=raw_input("What is your name?---") 
-print("We have four modes namely : easy , hard and terrible")#shows the game different game modes
+print("We have three modes namely : easy , hard and terrible")#shows the game different game modes
 ans=raw_input("%s Which mode would you like to play?--- "%name.upper())
 mode=ans
 str(mode)#converts mode to a string
